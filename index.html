@@ -154,6 +154,31 @@ p strong {
         text-decoration: underline;
       }
     }
+
+    /* Mobile-first: default = full width inside the article column */
+.anthony-photo{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 24px auto;
+}
+
+/* Tablet and up: start limiting size */
+@media (min-width: 768px){
+  .anthony-photo{
+    max-width: 560px;
+    margin: 32px auto;
+  }
+}
+
+/* Desktop and up: make it smaller and centered */
+@media (min-width: 1024px){
+  .anthony-photo{
+    max-width: 420px;
+    margin: 32px auto;
+  }
+}
   </style>
 </head>
 
@@ -390,7 +415,7 @@ p strong {
   
     <p>As financial scrutiny intensified, attention increasingly shifted beyond Anthony himself to the expanding role of Jo Ann, the incentives surrounding her involvement, and the broader financial structure that had grown around the trial.</p>
 
-    <p>Luca had served as Anthony's assistant for many months and contributed significantly to the project's early operations. A few months after Batch 1 was sent out, Anthony announced that Jo Ann would be taking over device setup and shipping. Luca was removed from his assistant role, with no clear explanation given to the broader community. In private messages, Jo Ann told others that Luca had stepped down because the workload was too overwhelming and that he wanted time to focus on his treatment. However, screenshots of private messages between Luca and Anthony show no indication that Luca requested to leave the assistant role. In those same messages, Anthony stated that the role was reassigned because Jo Ann "severely needs the extra money," suggesting a different motivation for shifting the responsibilities.</p>
+    <p>Luca had served as Anthony's assistant for many months and contributed significantly to the project's early operations. A few months after Batch 1 was sent out, Anthony announced that Jo Ann would be taking over device setup and shipping. Luca was removed from his assistant role, with no clear explanation given to the broader community. In private messages, Jo Ann told others that Luca had stepped down because the workload was too overwhelming and that he wanted time to focus on his treatment. However, screenshots of private messages between Luca and Anthony show no indication that Luca requested to leave the assistant role. In those same messages, Anthony stated that the role was reassigned because Jo Ann <strong>"severely needs the extra money,"</strong> suggesting a different motivation for shifting the responsibilities.</p>
   
     <img src="assets/images/luca-anthony-dm.png">
 
@@ -428,9 +453,11 @@ p strong {
     
     <img src="assets/images/anthony-leaving-update.png">
 
-    <p>As this report was being finalized, Anthony's true identity was revealed. Anton Kenneth Whaley had worked as an English tutor for eight years and held a Master of Arts degree. He advertised his tutoring services on a Russian marketplace where his profile listed these credentials. The expansive professional and academic background he had presented to the community—the PhD program in computational neuroscience, the consulting career, the olympiad achievements, the multiple business ventures—could not be verified. The person who had advised participants to taper off medications, who had interpreted neuroscience research to expand the device's purported applications, and who had dismissed ethical concerns as "irrelevant" had no medical training and no legitimate authority to provide such guidance.</p>
+    <p>As this report was being finalized, Anthony's true identity was revealed. <strong>Anton Kenneth Whaley</strong> had worked as an English tutor for eight years and held a Master of Arts degree, advertising his services on a Russian tutoring marketplace. The PhD program in computational neuroscience, consulting career, olympiad achievements, and business ventures could not be verified. The person who had advised participants to taper off medications and interpreted neuroscience research to expand the device's applications had no medical training.</p>    
     
-    <img src="assets/images/anthony-id.png">
+    <p>Jo Ann, who operated publicly under that name throughout the trial, is <strong>Joanna Zegarlicka</strong>, according to public profiles reviewed for this report. After Anthony stepped back from day-to-day involvement, she assumed primary responsibility for device configuration, treatment guidance, and participant communication, despite likewise having no verified medical or clinical qualifications.</p>
+
+    <img class="anthony-photo" src="assets/images/anthony-id.png">
     
     <p style="text-align:center; margin-top:64px;">
     <a href="#top" style="text-decoration:none; color:#666;">
